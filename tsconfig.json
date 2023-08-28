@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "outDir": "./distWatch",
+    "strict": true,
+    "target": "ESNext"
+  },
+  "watchOptions": {
+    "excludeDirectories": ["**/node_modules, ./dist/**/*"],
+    "fallbackPolling": "dynamicPriority",
+    "synchronousWatchDirectory": true,
+    "watchDirectory": "useFsEvents",
+    "watchFile": "useFsEvents",
+  }
+}

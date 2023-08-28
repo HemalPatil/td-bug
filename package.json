@@ -1,7 +1,15 @@
 {
   "name": "td",
   "version": "1.0.0",
+  "scripts": {
+    "clean": "rm -rf ./dist ./distWatch ./docs",
+    "docs": "npx typedoc --out ./docs --emit both --tsconfig ./tsconfig.json ./index.ts",
+    "watch": "npx tsc --watch --project tsconfig.json",
+    "watch:docs": "npx typedoc --out ./docs --watch --emit both --tsconfig ./tsconfig.json ./index.ts"
+  },
+  "type": "module",
   "devDependencies": {
+    "http-server": "^14.1.1",
     "typedoc": "^0.25.0",
     "typescript": "^5.2.2"
   }
